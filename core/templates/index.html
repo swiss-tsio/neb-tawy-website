@@ -37,7 +37,8 @@
     <div class="reveal text-center">
         <h2>{% trans "Guidance with care" %}</h2>
         <div class="gold-divider">◈</div>
-        <p class="text-muted intro-copy">
+        <p class="text-muted intro-copy"
+   style="text-align: center !important; text-align-last: center !important;">
             {% blocktrans %}With Neb Tawy, tarot readings are a space for reflection, insight, and meaningful conversation. Each reading is designed to help you explore your questions, recognize patterns, and move forward with greater clarity and intention.{% endblocktrans %}
         </p>
     </div>
@@ -49,7 +50,8 @@
 <section class="services-preview reading-body">
     <div class="services-preview-header reveal">
         <h2>{% trans "The Services" %}</h2>
-        <p class="text-muted" style="font-style: italic; margin-top: 1rem;">
+        <p class="text-muted"
+        style="font-style: italic; margin-top: 1rem; text-align: center !important; text-align-last: center !important;">
             {% trans "Each guidance is prepared individually, with care and intention." %}
         </p>
     </div>
@@ -60,7 +62,7 @@
             <p>
                 {% blocktrans %}Looking for clarity on a specific situation? This reading is designed to explore one clear question through a minimum five-card spread. Each reading is fully personalized to provide you with a thoughtful and nuanced interpretation tailored to your situation.{% endblocktrans %}
             </p>
-            <ul class="service-preview-list">
+            <ul class="service-card-includes">
                 <li>{% trans "One specific question" %}</li>
                 <li>{% trans "Minimum 5-card spread" %}</li>
                 <li>{% trans "Delivered in text format" %}</li>
@@ -75,7 +77,7 @@
             <p>
                 {% blocktrans %}For those who wish to explore an important area of their life in greater depth. Whether it concerns relationships, career, personal growth, a life decision or a period of transition, the Awakening Reading allows you to focus on one specific theme and explore up to three related questions.{% endblocktrans %}
             </p>
-            <ul class="service-preview-list">
+            <ul class="service-card-includes">
                 <li>{% trans "One specific theme" %}</li>
                 <li>{% trans "Up to 3 questions related to that theme" %}</li>
                 <li>{% trans "Delivered in text format" %}</li>
@@ -90,7 +92,7 @@
             <p>
                 {% blocktrans %}Designed for those seeking a deeper and more complete understanding of their situation. During a private phone reading, we will explore up to three themes of your choice in depth, from love and career to personal growth, family, finances and more. As the reading unfolds, we can explore what comes through, go deeper into certain areas when needed and address your questions in real time, creating a truly personalized and interactive experience.{% endblocktrans %}
             </p>
-            <ul class="service-preview-list">
+            <ul class="service-card-includes">
                 <li>{% trans "Explore up to 3 themes" %}</li>
                 <li>{% trans "Private 30-minute phone session" %}</li>
                 <li>{% trans "Live discussion around your situation" %}</li>
@@ -105,7 +107,7 @@
             <p>
                 {% blocktrans %}The most complete experience offered by Neb Tawy. During this 45-minute live session, we will explore your situation together in real time. Tarot serves as the foundation of the reading, allowing us to go deeper into your questions as they arise. When appropriate, dowsing rods may also be used to bring an additional perspective to the session, a practice reserved exclusively for live video readings.{% endblocktrans %}
             </p>
-            <ul class="service-preview-list">
+            <ul class="service-card-includes">
                 <li>{% trans "Private 45-minute Zoom session" %}</li>
                 <li>{% trans "Live tarot reading" %}</li>
                 <li>{% trans "Live discussion around your situation" %}</li>
@@ -122,7 +124,8 @@
 <section class="section important-info-section reveal reading-body">
     <div class="text-center">
         <h2>{% trans "Before We Begin" %}</h2>
-        <p class="text-muted intro-copy">
+        <p class="text-muted intro-copy"
+            style="text-align: center !important; text-align-last: center !important;">
             {% blocktrans %}Bookings are intentionally limited to preserve the quality of every reading. Written readings are delivered within 48 hours (barring exceptional delays). Phone and Zoom sessions take place at your booked date and time. In the event of a delay, you will be notified and can choose to keep your booking or request a refund. These readings are offered as a space for reflection and personal support; they do not replace medical, legal, or psychological advice.{% endblocktrans %}
         </p>
     </div>
@@ -156,7 +159,8 @@
     <div class="text-center">
         <div class="gold-divider">◈</div>
         <h2>{% trans "A respectful practice" %}</h2>
-        <p class="text-muted intro-copy">
+        <p class="text-muted intro-copy"
+        style="text-align: center !important; text-align-last: center !important;">
             {% blocktrans %}Readings are offered as spiritual insight, symbolic reflection, and personal guidance. They are not intended to replace medical, psychological, legal, or financial advice.{% endblocktrans %}
         </p>
         <a href="{% url 'booking' %}" class="btn-gold">{% trans "Book a reading" %}</a>

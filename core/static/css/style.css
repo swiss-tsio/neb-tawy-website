@@ -734,6 +734,30 @@ h1, h2, h3 {
     color: var(--gold);
 }
 
+.service-card-includes {
+        list-style: none;
+        padding: 0;
+        margin: 2rem 0 0;
+        color: var(--text-primary);
+        font-size: 0.9rem;
+        font-style: normal;
+        line-height: 1.8;
+        text-align: center;
+ }
+
+.service-card-includes li {
+        margin-bottom: 0.2rem;
+        text-align: justify !important;
+        text-align-last: left !important;
+}
+
+.service-card-includes li::before {
+        content: '✦';
+        color: var(--gold);
+        margin-right: 0.55rem;
+        font-size: 0.6rem;
+}
+
 /* ============================================================
    BLOG / LEGAL (Kept clean)
    ============================================================ */
@@ -1226,8 +1250,8 @@ section.philosophy-section {
 /* Reading pages: body paragraphs justified; image banners centered.
    These rules apply at every viewport width. */
 .reading-body p {
-    text-align: center !important;
-    text-align-last: center !important;
+    text-align: justify !important;
+    text-align-last: left !important;
     hyphens: auto;
 }
 

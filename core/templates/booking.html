@@ -81,6 +81,7 @@
     .booking-step-title {
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 1rem;
     }
 
@@ -103,7 +104,7 @@
         flex-direction: column;
         justify-content: space-between;
         gap: 1.5rem;
-        text-align: left;
+        text-align: center;
     }
 
     .service-card > div {
@@ -122,11 +123,13 @@
         font-size: 0.9rem;
         font-style: normal;
         line-height: 1.8;
-        text-align: left;
+        text-align: center;
     }
 
     .service-card-includes li {
         margin-bottom: 0.2rem;
+        text-align: justify !important;
+        text-align-last: left !important;
     }
 
     .service-card-includes li::before {
@@ -137,8 +140,8 @@
     }
 
     .service-price {
-        align-self: flex-start;
-        text-align: left;
+        align-self: center;
+        text-align: center;
         font-size: 1.5rem;
     }
 
@@ -183,6 +186,7 @@
     .booking-acknowledgement {
         display: flex;
         align-items: flex-start;
+        justify-content: center;
         gap: 0.75rem;
         margin-top: 1.5rem;
         color: var(--text-primary);
@@ -210,6 +214,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 0.75rem;
+        justify-content: center;
         margin-top: 1rem;
     }
 
@@ -255,7 +260,7 @@
         }
 
         .booking-step-title {
-            align-items: flex-start;
+            align-items: center;
             flex-direction: column;
             gap: 0.35rem;
         }
@@ -290,7 +295,9 @@
 
 <section class="section booking-shell reading-body">
 
-    <p class="booking-note reveal">
+    <p class="booking-note reveal" 
+    style="text-align: center !important; text-align-last: center !important;"style="text-align: center 
+    !important; text-align-last: center !important;">
         {% blocktrans %}Each reading is private and centered on your question or intention. Select the service that calls to you, choose an available date, then leave a few words about what you are seeking.{% endblocktrans %}
     </p>
 
