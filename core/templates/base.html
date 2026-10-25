@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Neb Tawy{% endblock %}</title>
 
+    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
@@ -16,7 +18,7 @@
 <body>
 
     <nav class="navbar">
-        <div class="nav-logo">✦ Neb Tawy</div>
+        <div class="nav-logo"><img class="nav-logo-icon" src="{% static 'images/favicon.png' %}" alt="" width="32" height="32"> <span>Neb Tawy</span></div>
 
         <ul class="nav-links">
             <li><a href="{% url 'index' %}">{% trans "Home" %}</a></li>

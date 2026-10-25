@@ -70,6 +70,9 @@ h1, h2, h3 {
 }
 
 .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.35em;
     flex-shrink: 0;
     opacity: 1;
     transition: opacity 0.3s ease;
@@ -77,6 +80,16 @@ h1, h2, h3 {
     font-size: 1.3rem;
     color: var(--gold);
     letter-spacing: 0.15em;
+}
+
+.nav-logo-icon {
+    display: block;
+    width: 100px;
+    height: 68px;
+    flex-shrink: 0;
+    object-fit: contain;
+    transform: translateX(-12px) scale(1.4);
+    transform-origin: right center;
 }
 
 .nav-links {
@@ -1260,4 +1273,23 @@ section.philosophy-section {
     text-align: center !important;
     text-align-last: center !important;
     hyphens: manual;
+}
+
+@media (max-width: 768px) {
+    .nav-logo-icon {
+        width: 28px;
+        height: 28px;
+        transform: none;
+    }
+
+    .nav-logo {
+        gap: 0.25rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-logo-icon {
+        width: 30px;
+        height: 35px;
+    }
 }
